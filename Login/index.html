@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In</title>
+	<meta charset="utf-8">
+	<title>Log-In</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="verificacion.js"></script>
 </head>
 <body>
-    <h3>Esta es la de Login</h3>
+	<div class="formulario">
+		<div>
+			<h2 class="w3-myfont">Log In</h2>
+		</div>
+		<label>Email: <input type="email" id="correo" placeholder="mail@example.com"></label>
+		<label>Password: <input type="password" id="contraseña" placeholder="*********"></label>
+		<button type="submit" onclick="obtener()">Submit</button>
+			<div class="mensaje"></div>
+	</div>
 </body>
 </html>

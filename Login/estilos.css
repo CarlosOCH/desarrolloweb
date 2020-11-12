@@ -1,0 +1,66 @@
+body,html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(madera.jpg);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.formulario{
+    width: 300px;
+    height: 350px;
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(61, 60, 60);
+
+}
+.titulo{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario button[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #838383;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formulario input[type="email"]:focus,
+.formulario input[type="password"]:focus{
+    width: 280px;
+    border-color: white;
+}
+
+.formulario button[type="submit"]{
+    border: 0;
+    background: #838383;
+    cursor: pointer;
+    border: 2px solid #838383;
+
+}
+.formulario button[type="submit"]:hover{
+    background: none;
+}
